@@ -7,5 +7,5 @@ class Cat:
         return f"{self._name}: Meow, meow"
 
     def eat_mouse(self) -> str:
-        self._number_of_eaten_mouse += 1
-        return f'{self._name}: I ate {self._number_of_eaten_mouse} mice'
+        self._number_of_eaten_mice += 1
+        return f'{self._name}: I ate {self._number_of_eaten_mice} mice'

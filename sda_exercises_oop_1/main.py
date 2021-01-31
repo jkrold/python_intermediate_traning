@@ -1,4 +1,5 @@
 from sda_exercises_oop_1.cat import Cat
+from sda_exercises_oop_1.dog import Dog
 
 if __name__ == '__main__':
 
@@ -23,3 +24,7 @@ if __name__ == '__main__':
     print(cat2_num_of_eaten_mice)
     print(cat3_num_of_eaten_mice)
     print(cat4_num_of_eaten_mice)
+
+    dog1 = Dog("Rex")
+    dog1_sound = dog1.make_sound()
+    print(dog1_sound)
