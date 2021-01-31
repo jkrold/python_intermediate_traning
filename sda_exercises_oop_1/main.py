@@ -4,9 +4,9 @@ from sda_exercises_oop_1.dog import Dog
 if __name__ == '__main__':
 
     cats_list = [Cat('Snow flake'), Cat('Salem'), Cat('Tiger'), Cat('Smokey')]
-    for cat in cats_list:
-        sound: str = cat.make_sound()
-        print(sound)
+    # for cat in cats_list:
+    #     sound: str = cat.make_sound()
+    #     print(sound)
 
     for i in range(0, 4):
         cat1_num_of_eaten_mice = cats_list[0].eat_mouse()
@@ -25,6 +25,10 @@ if __name__ == '__main__':
     print(cat3_num_of_eaten_mice)
     print(cat4_num_of_eaten_mice)
 
-    dog1 = Dog("Rex")
-    dog1_sound = dog1.make_sound()
-    print(dog1_sound)
+    dogs_list = [Dog("Rex"), Dog("Alex"), Dog("Ace")]
+
+    animals_table = [cats_list, dogs_list]
+
+    for lst in animals_table:
+        for animal in lst:
+            print(animal.make_sound())
