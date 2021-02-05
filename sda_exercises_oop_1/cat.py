@@ -1,4 +1,10 @@
-class Cat:
+from python_intermediate_traning.sda_exercises_oop_1.Movable import Movable
+
+
+class Cat(Movable):
+    def move(self):
+        print("I'm walking")
+
     def __init__(self, name: str):
         self._name = name
         self._number_of_eaten_mice = 0
