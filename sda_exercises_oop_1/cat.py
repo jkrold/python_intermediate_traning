@@ -15,3 +15,7 @@ class Cat(Movable):
     def eat_mouse(self) -> str:
         self._number_of_eaten_mice += 1
         return f'{self._name}: I ate {self._number_of_eaten_mice} mice'
+
+    @property
+    def name(self):
+        return self._name
