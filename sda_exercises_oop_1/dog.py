@@ -4,3 +4,7 @@ class Dog:
 
     def make_sound(self) -> str:
         return f"{self._name}: Woof, woof"
+
+    @property
+    def name(self):
+        return self._name
