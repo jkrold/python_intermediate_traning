@@ -5,12 +5,13 @@ class Cat(Movable):
     def move(self):
         print("I'm walking")
 
-    def __init__(self, name: str):
+    def __init__(self, name: str, sound: str = "Meow, meow"):
         self._name = name
+        self._sound = sound
         self._number_of_eaten_mice = 0
 
     def make_sound(self) -> str:
-        return f"{self._name}: Meow, meow"
+        return f"{self._name}: {self._sound}"
 
     def eat_mouse(self) -> str:
         self._number_of_eaten_mice += 1
