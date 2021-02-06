@@ -13,14 +13,14 @@ class Rectangle(Figure):
         self._width = width
 
     def get_area(self):
-        return self._height * self._width
+        return round(self._height * self._width, 2)
 
 class Circle(Figure):
     def __init__(self, radius: float):
         self._radius = radius
 
     def get_area(self):
-        return pi * self._radius ** 2
+        return round(pi * self._radius ** 2, 2)
 
 class Triangle(Figure):
     def __init__(self, height: float, base: float):
@@ -28,4 +28,4 @@ class Triangle(Figure):
         self._base = base
 
     def get_area(self):
-        return self._height * self._base / 2
+        return round(self._height * self._base / 2, 2)
