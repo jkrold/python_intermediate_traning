@@ -1,6 +1,8 @@
 from abc import ABC, abstractmethod
 from math import pi
 
+from typing import Tuple
+
 
 class Figure(ABC):
     @abstractmethod
@@ -29,3 +31,10 @@ class Triangle(Figure):
 
     def get_area(self):
         return round(self._height * self._base / 2, 2)
+
+
+def sum_area_of_figures(*args: Tuple[Figure]):
+    summed_area: float = 0
+    for figure in args:
+        summed_area += figure.get_area()
+    return round(summed_area, 2)
