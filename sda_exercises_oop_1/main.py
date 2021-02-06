@@ -34,5 +34,5 @@ if __name__ == '__main__':
         for animal in lst:
             print(animal.make_sound())
 
-    Vet().sayCatHello(cats_list[0])
-
+    Vet().say_hello(cats_list[0])
+    Vet().say_hello(dogs_list[0])
