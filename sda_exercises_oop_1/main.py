@@ -1,5 +1,6 @@
-from sda_exercises_oop_1.cat import Cat
-from sda_exercises_oop_1.dog import Dog
+from python_intermediate_traning.sda_exercises_oop_1.Vet import Vet
+from python_intermediate_traning.sda_exercises_oop_1.cat import Cat
+from python_intermediate_traning.sda_exercises_oop_1.dog import Dog
 
 if __name__ == '__main__':
 
@@ -32,3 +33,6 @@ if __name__ == '__main__':
     for lst in animals_table:
         for animal in lst:
             print(animal.make_sound())
+
+    Vet().sayCatHello(cats_list[0])
+
