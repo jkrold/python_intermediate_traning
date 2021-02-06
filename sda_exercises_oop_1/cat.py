@@ -1,13 +1,13 @@
+from python_intermediate_traning.sda_exercises_oop_1.Animal import Animal
 from python_intermediate_traning.sda_exercises_oop_1.Movable import Movable
 
 
-class Cat(Movable):
+class Cat(Movable, Animal):
     def move(self):
         print("I'm walking")
 
     def __init__(self, name: str, sound: str = "Meow, meow"):
-        self._name = name
-        self._sound = sound
+        super().__init__(name, sound)
         self._number_of_eaten_mice = 0
 
     def make_sound(self) -> str:
