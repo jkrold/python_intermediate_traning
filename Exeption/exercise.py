@@ -44,3 +44,20 @@ def case_4(dictionary: dict):
 def case_6():
     raise NotImplementedError("Solved future")
 
+def case_7():
+    fd = None
+    try:
+        fd = open('C:\\aaa.txt')
+    except IOError as i:
+        print(f'Exception caught {i.args}')
+    finally:
+        if fd:
+            print("File descriptor closing")
+            fd.close()
+
+def case_7_v2():
+    try:
+        with open('C:\\aaa.txt') as fd: # context_manager
+            print("File is open")
+    except IOError as i:
+        print(f'Exception caught {i.args}')

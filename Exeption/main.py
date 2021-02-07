@@ -1,4 +1,4 @@
-from python_intermediate_traning.Exeption.exercise import case_1, case_2, case_4, case_6
+from python_intermediate_traning.Exeption.exercise import case_1, case_2, case_4, case_6, case_7, case_7_v2
 
 
 def main():
@@ -18,10 +18,12 @@ def main():
     # except KeyError as k:
     #     print(f'Exception caught {k.args}')
 
-    try:
-        case_6()
-    except NotImplementedError as n:
-        print(f'Exception caught {n.args}')
+    # try:
+    #     case_6()
+    # except NotImplementedError as n:
+    #     print(f'Exception caught {n.args}')
+
+    case_7_v2()
 
 
 if __name__ == "__main__":
