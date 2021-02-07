@@ -47,10 +47,12 @@ def case_6():
 def case_7():
     fd = None
     try:
-        fd = open('C:\\aaa.txt')
-    except IOError as i:
-        print(f'Exception caught {i.args}')
+        fd = open('C:\\bbb.txt')
+    # except IOError as i:
+    #     print(f'Exception caught {i.args}')
+
     finally:
+        print('Finally run')
         if fd:
             print("File descriptor closing")
             fd.close()

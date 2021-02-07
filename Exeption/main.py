@@ -23,7 +23,7 @@ def main():
     # except NotImplementedError as n:
     #     print(f'Exception caught {n.args}')
 
-    case_7_v2()
+    case_7()
 
 
 if __name__ == "__main__":
