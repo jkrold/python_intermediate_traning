@@ -18,8 +18,8 @@ def json_human_to_file(humans: list):
 
     for human in humans:
         human_dict = human.convert_to_dict()
-        human_json = json.dumps(human_dict)
-        humans_serialize.append(human_json)
+        # human_json = json.dumps(human_dict)
+        humans_serialize.append(human_dict)
 
     try:
         with open("./humans.json", "w") as fd:
