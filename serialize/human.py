@@ -34,3 +34,20 @@ def json_human_to_file(humans: list):
             json.dump(humans_serialize, fd, indent=2)
     except (IOError, Exception) as e:
         print(f'Problem with writing to file, more info: {e.args}')
+
+def json_human_from_file():
+    humans_serialize = []
+
+    try:
+        with open("./humans_test.json", "r") as fd:
+            humans_serialize = json.load(fd)
+    except (IOError, Exception) as e:
+        print(f'Problem with writing to file, more info: {e.args}')
+
+    humans = []
+
+    for human_dict in humans_serialize:
+        human = Human.convert_from_dict(human_dict)
+        humans.append(human)
+
+    return humans
