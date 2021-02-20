@@ -1,7 +1,7 @@
 # from serialize.csv_training import csv_writer, csv_read
 # from serialize.pickle_training import pickle_write, pickle_read
 
-from serialize.json_training import json_to_file
+from serialize.json_training import json_to_file, json_from_file
 
 
 def main():
@@ -17,7 +17,8 @@ def main():
     # # csv_writer(users)
     # print(csv_read())
 
-    json_to_file()
+    # json_to_file()
+    print(json_from_file())
 
 if __name__ == "__main__":
     main()
