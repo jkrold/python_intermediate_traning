@@ -7,7 +7,7 @@ class Human:
         self.name = name
         self.surname = surname
 
-    def __str__(self):
+    def __repr__(self):
         return f"Human: {self.name} {self.surname}, {self.age}"
 
     def convert_to_dict(self):

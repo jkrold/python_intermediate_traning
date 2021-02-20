@@ -32,6 +32,8 @@ def main():
     for human in humans:
         print(human)
 
+    # print(json_human_from_file())
+
 
 if __name__ == "__main__":
     main()
