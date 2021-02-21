@@ -1,4 +1,5 @@
 from generators.exercise_3 import Iterable
+from generators.exercise_4 import exercise_4
 
 
 def iterator_ex_1():
@@ -41,8 +42,9 @@ def iterator_ex_3(n):
     return result
 
 def main():
-    print(iterator_ex_2(10000))
-    print(iterator_ex_3(10000))
+    # print(iterator_ex_2(10000))
+    # print(iterator_ex_3(10000))
+    exercise_4()
 
 
 if __name__ == '__main__':
